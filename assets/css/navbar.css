@@ -32,4 +32,6 @@
 
 #section2 > h4{
     float:right;
+    color:#fff;
+    margin-right: 10px;
 }

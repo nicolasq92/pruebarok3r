@@ -2,7 +2,7 @@ angular.module('app',['ui.router', 'chart.js'])
 
 .config(function($stateProvider, $urlRouterProvider, ChartJsProvider) {
 
- //$urlRouterProvider.otherwise('home');
+ $urlRouterProvider.otherwise('home.news');
 
  $stateProvider
 
