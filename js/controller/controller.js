@@ -19,15 +19,17 @@ angular.module('app')
 			zoneid.push(activity.activityList[i].zoneId);
 			count.push([activity.activityList[i].data.count]);
 			speed.push(activity.activityList[i].data.speed);
-			time.push([activity.activityList[i].data.time]);	
+			// time.push([activity.activityList[i].data.time]);	
+			time.push(moment(activity.activityList[i].data.time, "x"));
 			}
 			console.log(zoneid);
 			console.log(count);
 			console.log(speed);
-			console.log(time);
+			// console.log(time);
 			
-   $scope.labels = ["January", "February", "March", "April", "May", "June", "July"];
-  $scope.labels2 = zoneid;
+  
+   $scope.labels = zoneid;
+   $scope.labels2 = zoneid;
    $scope.series = zoneid;
 
   $scope.data = count;
